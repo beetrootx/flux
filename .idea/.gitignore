@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+workspace.xml
+modules.xml
+misc.xml
+flux.iml
+compiler.xml
+gradle.xml
+/kotlinScripting.xml
+/jarRepositories.xml

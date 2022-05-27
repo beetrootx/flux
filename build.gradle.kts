@@ -1,10 +1,12 @@
-plugins {
-    kotlin("jvm") version Libs.Versions.kotlin apply false
-}
+buildscript {
+    dependencies {
+        classpath(libs.android.gradle.plugin)
+        classpath(libs.kotlin.gradle.plugin)
+    }
 
-allprojects {
     repositories {
         mavenCentral()
+        gradlePluginPortal()
         google()
     }
 }

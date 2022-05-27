@@ -1,0 +1,30 @@
+[versions]
+
+android-tools = "7.1.3"
+
+androidx-lifecycle = "2.4.0"
+androidx-savedstate = "1.1.0"
+androidx-viewbinding = "4.2.1"
+
+jUnit = "4.13.2"
+kotlin = "1.6.10"
+
+kotlinx-coroutines = "1.5.1"
+
+mockito-core = "3.3.3"
+mockito-kotlin = "3.2.0"
+
+mockk = "1.11.0"
+
+truth = "1.1.3"
+
+[libraries]
+
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "android-tools" }
+
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-rx2 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }

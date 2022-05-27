@@ -1,3 +1,8 @@
+rootProject.name = "flux"
+
+enableFeaturePreview("VERSION_CATALOGS")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS") // Dependencies between projects in a multi-project build.
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -12,9 +17,15 @@ pluginManagement {
     }
 }
 
-rootProject.name = "flux"
+plugins {
+    id("com.gradle.enterprise") version "3.8.1"
+}
 
-// Enable FeaturePreview.
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS") // Dependencies between projects in a multi-project build.
+gradleEnterprise {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
+}
 
 // TODO: Add sub-modules.
